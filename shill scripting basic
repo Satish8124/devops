@@ -4,13 +4,13 @@
 COMMANDAS         EXPLINATION
 
 cd :-  change Directory for root.
-cd / :- change the home Directory  
-:- 
-:- 
-:- 
-:- 
-:- 
-:- 
+cd / :- change the home Directory.  
+pwd :- present change Directory.
+ls :- list of files in side the particular Folder are Directory. 
+mkdir filename :- it creates the folder inside the correct directory.
+rm :- it delete the  all files.
+rm -r foldername :- it remove the particular folder where you have to delete and not a file.
+rm -f filename :- it remove the correct file of the particular directory in that file it can be delete.
 :- 
 :- 
 :- 
