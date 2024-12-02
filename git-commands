@@ -1,0 +1,10 @@
+GIT HUB COMMANDAS :-
+
+1) git init ---> it can be instatial the the git in folder
+2) git add * ----> it can be add the all files in git
+3) git commit -m "write message" ---> it can be save the all file in git
+4) git remote add origin linkofrepo  ---> it can be access the git reprository
+5) git push -u origin branchname ------> it can be push the data in repro
+6) git clone repolink ----> it can be access and download the repro all data 
+7) git branch -m main ---> create the sub branch of repo
+8) git checkout -b branchname ----> it changes the branches which branch we need
