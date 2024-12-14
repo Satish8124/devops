@@ -67,6 +67,27 @@ What do you mean by Docker image and Container Image?
 1) docker start containername(or)CONTAINERID
 2) docker stop  containername(or)CONTAINERID
 
+###----DOCKER NETWORKING -----###
+networking means one or more connection in internet
+there are three networks are avaliable 
+1) Brig network -> [ docker run -d --name contername -p 8081:80 imagename ]
+        Brige network means it can be craeted the unique hosting address but same ip of container.
+        Like:- expl i can have the 3 containers i want to run that into the google that time i want to create the bridge network 
+                it can be used to access the container ip and create unique host[8081][8082].
+2) Host network -> [ docker run -d containername --net host imagename ]
+                  Host network means it can directly use the docker ip address and run the google not use any host number.
+3) None network -> [docker run -d containername --net none imagename]
+                  None network means it work on the non host address.
+
+use this into the docker host:- 
+1) check hostname
+2) check the ip address use [ifconfig]
+3) docker nework ls -> it can show the networks are avaliable 
+4) check image and create the container use command as [ docker run -d --name containername -p 8080:80 imagename ]
+5) check the ip address and copy that and past the google and host number also you can run it can open the google browser.
+6) [docker network inspect brige ]
+
+
 
 
 
