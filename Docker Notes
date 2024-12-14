@@ -32,3 +32,7 @@ What is a Docker Image?
 -> A Docker Image is a read-only template that contains a set of instractions for creating a container that can run on the Docker Platform.
 -> it provide a convenient way of package up applications and preconfigured server environments, 
 -> by using this image to only create the n-numner of Containers.
+
+What do you mean by Docker image and Container Image?
+-> docker image means it can be used to store the all data in to container wise
+
