@@ -1,0 +1,20 @@
+what is Docker?
+
+
+What is container ?
+-> container is a way to packages application with all the  necessary dependencies configaration.
+-> it will be have application IMAGES to configer.
+
+How to run and create the Docker Container?[DOCKER HUB]
+->
+->
+->
+
+how to install image in my container ?
+-> first install Docker Desktop in your Laptop.
+-> check the docker are installed not use [docker]
+-> use the doker hub inside we can have the free images in that images to pull the image
+-> like exp:- i am using the NGINX image i can ge access the all web content like web pages are represent in google.
+-> using command as [doker pull nginx]
+->check the images are avaliable inside the Docker use [docker images]
+
