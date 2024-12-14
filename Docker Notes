@@ -6,9 +6,10 @@ What is container ?
 -> it will be have application IMAGES to configer.
 
 How to run and create the Docker Container?[DOCKER HUB]
-->
-->
-->
+->first create the image inside the docker desktop.
+-> in image it can the image id and all informatio.
+-> Then click on the run buttkon they show the create a container add the localhost number and add the network all the information.
+-> create the container.
 
 how to install image in my container ?
 -> first install Docker Desktop in your Laptop.
