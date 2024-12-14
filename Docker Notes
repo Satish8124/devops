@@ -43,7 +43,7 @@ What do you mean by Docker image and Container Image?
 2) docker --version   -> it can show the version of docker.
 3) docker login  -> it can be liogin the DOCKER HUB account.
 
-4) docker images ls -> in case we can have any images in my docker use this command to show the all images.
+4) docker image ls -> in case we can have any images in my docker use this command to show the all images.
 5) docker pull imagename -> it can download the new image in docker.
 6) docker search imagename  -> it can show the related all the images for searching.
 7) docker inspect image imagename  -> it can be show the over all information of the particular image.
