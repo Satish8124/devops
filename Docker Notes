@@ -36,3 +36,46 @@ What is a Docker Image?
 What do you mean by Docker image and Container Image?
 -> docker image means it can be used to store the all data in to container wise
 
+
+
+##### COMMANDS FOR DOCKER ######
+1) docker   -> it can be show the docker is avaliable are not.
+2) docker --version   -> it can show the version of docker.
+3) docker login  -> it can be liogin the DOCKER HUB account.
+
+4) docker images ls -> in case we can have any images in my docker use this command to show the all images.
+5) docker pull imagename -> it can download the new image in docker.
+6) docker search imagename  -> it can show the related all the images for searching.
+7) docker inspect image imagename  -> it can be show the over all information of the particular image.
+
+## ------- how to create container using terminal  commands ------##
+1) docker ps  -> it can be show the running state containers.
+2) docker ps -a  -> it can show the how many containers are runnung and how many are stoping.
+3) docker create imagename   -> it can be created the docker container in particular image.
+4) docker create --name nameofcontainer imagename  -> it can be created by customised container like user defined containered.
+5) docker run --name containername imagename -> it can be create the container and automaticaly run the container and start the container but defacult to stop this 
+                                                any functional keys are not work.[ctrl + q, ctrl + c, ctrl + z]any key not work.
+6) docker run -d --name continername imagename  -> it the use of the creating the container and it can start but nut run the container use this to create container.
+
+##----remove the container ----##
+1) docker rm -> it can be remove the container.
+2) docker rmi -> it can also remove the container.
+3) docker kill  -> it can be kill the container means, it can be showdown  fourcefully in container means any background are working also it can be close the all.
+4) 
+
+### ----- Running containers ------###
+1) docker start containername(or)CONTAINERID
+2) docker stop  containername(or)CONTAINERID
+
+
+
+
+
+
+
+
+
+
+
+
+
