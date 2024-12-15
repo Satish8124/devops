@@ -61,7 +61,7 @@ What do you mean by Docker image and Container Image?
 1) docker rm -> it can be remove the container.
 2) docker rmi -> it can also remove the container.
 3) docker kill  -> it can be kill the container means, it can be showdown  fourcefully in container means any background are working also it can be close the all.
-4) 
+4) docker rm $(docker ps -a -q) -> it can be remove the multipul containers at a time. this is loop
 
 ### ----- Running containers ------###
 1) docker start containername(or)CONTAINERID
@@ -86,6 +86,137 @@ use this into the docker host:-
 4) check image and create the container use command as [ docker run -d --name containername -p 8080:80 imagename ]
 5) check the ip address and copy that and past the google and host number also you can run it can open the google browser.
 6) [docker network inspect brige ]
+
+
+###----What are the volumes in Docker ?----####
+-> it can be store container data perminatly with out volume container data must be temporieriely.
+1) [docker volume ls ] -> it can show the docker volumes.
+2) [ docker volume inspect volumename ] -> it can be show the where we can storing the volumes.PATH AS (var/lib/docker/volume)
+3) [cd var/lib/docker/volume  ls] ->first we change the directory of the where we are storing the volume data, then use the (ls)command to find the how many volumes
+                                    stored inside taht.
+4) [ cd volumename ] it can be acess the particular volume. use the (ls) it can be show the what ever must be we can have all files.
+6) [docker volume rm volumeid] -> it can be remove the what ever we can selected particular volume.
+7) [docker volume prune] -> it can remov the all volumes with out using the any container in any volume that volumes must be remove.
+
+###----How to create a volume for Docker Container?---###
+1) [ docker volume create volumename ]-> It can be create the new volume.
+2) [ docker ls] -> it can shhow the list fo volumes.
+3) [ docker volume incept volumename ] -> it can be inspect the information of volume.
+
+###---Add the volume in spefic Container ?---###
+1) [docker login ] -> first login the container that add the volume.
+2) [ docker run -it --name=containername --mount source=volumename,destination=/data imagename ] -> it can be add the spefic volume into container and
+   [  docker run -it -name  containername -v volumenane:/data imagename ]                            add based on the image.
+3) [ls] -> next check the list of the container. inside we can have the folder as data.
+4) [cd data ] -> next move that folder, and create the sum any file.
+5) [ touch first.txt] -> using shell script to create the file and add the data.
+6) [echo " this is my first volume creation" >> first.txt] -> this command can be added the data inside created file.
+7) [cat first.txt ] -> use the cat command to check they are added are not.
+8) [cd volumedata storedlocation] -> go to the stored location and check that can storede are not.
+9) [docker run it --volumes-from container1 --name container2 imagename /bin/bash ] -> it can be share the volume in one container to another container.
+
+##---HOW TO CREATE THE VOLUEME IN CUSTOME FOLDER ---##
+1) [ mkdir foldername ] -> using shell script to create the folder. and change the folder.
+2) [mkdir file ] -> same create the another folder and change the folder.
+3) [pwd] -> chewck the present working directory.
+4) [touch file.txt ] -> create a file.
+5) [echo "this is mydata">>file.txt] -> add the data in the created file.
+6) [docker run -it -name containername -v "$(pwd)":/data1 imagename ] -> this command can be created the custom folder inside volume.
+7) [ls] ->Then go and check they are created or n ot in correct directory.
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+) [ ] ->
+.
 
 
 
