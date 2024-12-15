@@ -90,6 +90,27 @@ use this into the docker host:-
 
 ###----What are the volumes in Docker ?----####
 -> it can be store container data perminatly with out volume container data must be temporieriely.
+To create a Docker Volume use the command
+-----------------------------------------
+docker volume create testvol1
+docker volume ls
+docker volume inspect testvol1
+---------------------------------------
+Mounting a Volume using -v or --mount
+---------------------------------------
+docker run -it --name=srv01 --mount source=testvol1,destination=/data centos
+docker run -it --name srv04 -v testvol1:/data centos
+docker run -it --volumes-from srv01 --name srv02 centos /bin/bash
+---------------------------------------
+Mounting a Host Directory as a Data volume 
+---------------------------------------
+mkdir files
+cd files
+touch file.txt
+docker run -it –-name srv05 -v "$(pwd)":/data1 centos
+docker volume rm [volume_name]
+------------------------------------------------
+
 1) [docker volume ls ] -> it can show the docker volumes.
 2) [ docker volume inspect volumename ] -> it can be show the where we can storing the volumes.PATH AS (var/lib/docker/volume)
 3) [cd var/lib/docker/volume  ls] ->first we change the directory of the where we are storing the volume data, then use the (ls)command to find the how many volumes
@@ -123,7 +144,9 @@ use this into the docker host:-
 5) [echo "this is mydata">>file.txt] -> add the data in the created file.
 6) [docker run -it -name containername -v "$(pwd)":/data1 imagename ] -> this command can be created the custom folder inside volume.
 7) [ls] ->Then go and check they are created or n ot in correct directory.
-) [ ] ->
+
+##--REMOVE THE VOLUME--##
+1) [docker volume rm volumename ] ->
 ) [ ] ->
 ) [ ] ->
 ) [ ] ->
