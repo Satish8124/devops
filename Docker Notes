@@ -155,6 +155,32 @@ docker volume rm [volume_name]
 ) [ ] ->
 ) [ ] ->
 ) [ ] ->
+------------------------------------------------
+##----DOCKER CUSTOM IMAGE CREATIONG PROCESS ----##
+
+step1 =>  open the ubuntu and create the FOLDER inside the server.
+step2 => download the code to githb. and create the docker file.
+Docker File Stracture:
+[[---
+FROM python:3-alpine3.9 -----> ity can be install the python.
+WORKDIR /app  ------> inside the container create the new folder that as app.
+COPY . .   -----> it can copy the all local folder file to container inside folder.
+EXPOSE 5000  ----> by default flask local host number.
+RUN pip install -r requirements.txt   ----> Dependence install in server.
+CMD ["flask", "run", "--host", "0.0.0.0"]  ---> running command.
+----]]
+
+step3 => change the path of that code folder.
+step4 => [docker build -t imagename .] --> it can be create the image. that spefic code.
+step5 => [ docker run -p 5000:5000 imageid] -> it can be create to the container and run.
+
+
+
+
+#### ---------Docker creation completed----#####
+-------------------------------------------------
+
+
 ) [ ] ->
 ) [ ] ->
 ) [ ] ->
