@@ -58,11 +58,13 @@ What do you mean by Docker image and Container Image?
 6) docker run -d --name continername imagename  -> it the use of the creating the container and it can start but nut run the container use this to create container.
 
 ##----remove the container ----##
-1) docker rm -> it can be remove the container.
-2) docker rmi -> it can also remove the container.
-3) docker kill  -> it can be kill the container means, it can be showdown  fourcefully in container means any background are working also it can be close the all.
+1) docker rm <imageid & containerid> -> it can be remove the container.
+2) docker rmi <imageid & containerid> --> it can also remove the container.
+3) docker kill <imageid & containerid> -> it can be kill the container means, it can be showdown  fourcefully in container means any background are working also it can be close the all.
 4) docker rm $(docker ps -a -q) -> it can be remove the multipul containers at a time. this is loop.
-5) docker containerid prune ----> it can be remove the all the containers.
+5) docker <imageid & containerid> prune ----> it can be remove the all the containers.
+6) docker rmi -f <image_id> ----> If the image is being used by a container, you need to stop the container first. To force-remove an image.
+
 
 ### ----- Running containers ------###
 1) docker start containername(or)CONTAINERID
