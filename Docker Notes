@@ -61,7 +61,8 @@ What do you mean by Docker image and Container Image?
 1) docker rm -> it can be remove the container.
 2) docker rmi -> it can also remove the container.
 3) docker kill  -> it can be kill the container means, it can be showdown  fourcefully in container means any background are working also it can be close the all.
-4) docker rm $(docker ps -a -q) -> it can be remove the multipul containers at a time. this is loop
+4) docker rm $(docker ps -a -q) -> it can be remove the multipul containers at a time. this is loop.
+5) docker containerid prune ----> it can be remove the all the containers.
 
 ### ----- Running containers ------###
 1) docker start containername(or)CONTAINERID
