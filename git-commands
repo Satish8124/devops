@@ -25,7 +25,7 @@ Paste the copied key into the Key field and provide a title.
 Click Add SSH Key.
 
 6) ssh -T git@github.com
-7) git clone git@github.com:Satish8124/Devops_training.git  
+7) git clone https/git@github.com:Satish8124/Devops_training.git  
 8) cd directory
 
 
