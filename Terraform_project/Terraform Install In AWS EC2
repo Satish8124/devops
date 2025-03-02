@@ -1,0 +1,13 @@
+Install Terraform in AWS EC2 Instance:-
+
+1) first create the one ec2 instance in ubuntu.
+2) open that or connect that.
+3) Hera first update the ubuntu [ sudo apt-get update ]
+4) create the new folder in side [ mkdir terraform_folder]
+5) user the link to download the terraform in ec2 instance
+ Link AS :-
+[ wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list ]
+6) update [sudo apt update] 
+7) install the terraform [ sudo apt install terraform ]
+8) chek it installed are not [ terraform -v ]
