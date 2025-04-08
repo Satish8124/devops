@@ -177,10 +177,14 @@ step3 => change the path of that code folder.
 step4 => [docker build -t imagename .] --> it can be create the image. that spefic code.
 step5 => [ docker run -p 5000:5000 imageid] -> it can be create to the container and run.
 
-
-
-
 #### ---------Docker creation completed----#####
+-------------------------------------------------
+
+
+#### ---------Docker image and container push commands ----#####
+step1-> docker login
+step2-> docker tag myimage:latest dockerhub-userprofilename/imagename
+step3-> docker push pandu8124/myimage:latest
 -------------------------------------------------
 
 
