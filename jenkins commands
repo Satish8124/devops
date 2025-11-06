@@ -1,7 +1,9 @@
 Jenkins Explanation
 
 1) What is Jenkins?
-Jenkins is an open-source automation server widely used in DevOps for Continuous Integration (CI) and Continuous Delivery (CD). It helps automate the parts of software development related to building, testing, and deploying code, enabling teams to deliver software faster and with fewer errors.
+Jenkins is an open-source automation server widely used in DevOps for Continuous Integration (CI) and Continuous Delivery (CD).
+It helps automate the parts of software development related to building, testing, and deploying code,
+enabling teams to deliver software faster and with fewer errors.
 2) Key Features of Jenkins:
 1.	Automation: Automates repetitive tasks like building, testing, and deploying.
 2.	Plugins: Over 1,800 plugins to integrate with various tools (e.g., Git, Docker, Kubernetes).
